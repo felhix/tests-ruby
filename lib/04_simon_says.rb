@@ -10,15 +10,11 @@ def simon_says
 			return mot1
 		end
 	end
-	def start_of_word(lettre, n1)
-		a = ""
-		n1.times do |i|
-			a += lettre[i]
-		end
-		return a
+	def start_of_word(mot2, n2)
+		return mot2.slice(0..n2-1)
 	end
-	def first_word()
-
+	def first_word(mot3, n3)
+		return mot3.scan(/\w+/)[0]
 	end
 	def titleize(mot2)
 		
