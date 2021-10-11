@@ -1,3 +1,13 @@
+# def who_is_bigger(x,y,z)
+#  a = [x, y, z]
+#  b = ["a", "b", "c"]
+#  if a.include? nil
+#   return "nil detected"
+#  else
+#   return "#{b[a.each_with_index.max[1]]} is bigger"
+# end
+# end
+
 def who_is_bigger(a, b, c)
   list = [a, b, c]
   if list.any?{ |e| e.nil? } == true

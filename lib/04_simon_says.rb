@@ -6,10 +6,14 @@ def shout(text)
   return text.upcase
 end
 
+# def repeat(text, num=2)
+#   text2 = " " + text
+#   text = text + " " + text
+#   return text + (text2 * (num - 2))
+# end
+
 def repeat(text, num=2)
-  text2 = " " + text
-  text = text + " " + text
-  return text + (text2 * (num - 2))
+  [text].cycle(num).to_a.join(" ")
 end
 
 def start_of_word(text="abcdefg", n)
