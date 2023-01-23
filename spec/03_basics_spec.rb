@@ -24,6 +24,7 @@ describe 'crazy stuff on strings' do
   end
 end
 
+#### --------- Continuer ici
 
 describe '42 finder' do
   # array_42 takes an array as parameter and returns:
